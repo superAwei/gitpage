@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* 重設 CSS預設值 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 開始撰寫CSS區域 */
+/* 最上方社群區域 */
+
+.wrap{
+    width: 100%; 
+    /* 寬度給 100% 算是有給一個寬度嗎？還是要用 px當作單位才算是給一個寬度呢？ */
+    margin: 0 auto;
+}
+.community ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    background-color: #f6f6f6;
+}
+.community ul li img{
+  vertical-align: middle;
+}
+
+.community .tw-icon{
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
+}
+.community ul li{
+    padding: 7px 6px;
+}
+.community .fb{
+    color: #4460a0;
+}
+.community .tw{
+    color: #00aaec;
+}
+
+/* 表頭區域 */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 a{
+    background-image: url(../img/logo.png);
+    width: 224px;
+    height: 50px;
+    display: block;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header ul{
+    display: flex;
+}
+.header ul li{
+    width: 100px;
+}
+.header ul li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #00cc99;
+}
+
+.header ul li a span{
+    padding-bottom: 11px;
+}
+.header ul li a span:hover{
+    border-bottom: 3px solid #00cc99;
+}
+
+/* 宣傳語區域 */
+.slogan{
+    /* width: 100%; */
+    height: 346px;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+}
+.slogan h2{
+     /* width: 100%; slogan不需要設定 width ，因為 div 是區塊元素會自適應父元素寬度*/
+     padding: 34px 22px;
+     line-height: 1.4;
+     color: #fff;
+     font-size: 37px;
+     background-color: rgba(42, 42, 42, 0.2);
+}
+
+/*課程產品區域 */
+.course ul{
+    display: flex;
+    justify-content: space-around;
+}
+.course ul li{
+    width: 400px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 3px 3px rgb(172, 172, 172);
+    padding: 60px 20px;
+    margin: 30px;
+}
+.course .img{
+    height: 150px;
+    margin-bottom: 20px;
+    }
+
+.course h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.course p{
+    line-height: 1.5;
+    text-align: left;
+}
+
+/*其他教學機構比較區域*/
+.difference{
+    width: 1024px;
+    margin: 0 auto;
+    padding-bottom: 63px;
+}
+.difference h3{
+  font-size: 30px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.difference table{
+    margin: 30px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.difference .tr-top{
+    border-top: 1px solid #dddd;
+}
+
+.difference tr{
+    border-bottom: 1px solid #dddd;
+}
+
+.difference th{
+    width: 300px;
+    background-color: #f7f7f7;
+    font-weight: 800;
+}
+.difference .green{
+    color: #22b28e;
+}
+
+.difference th,td{
+    padding: 10px;
+    text-align: left;
+}
+
+/* 聯絡我們區域 */
+.contact{
+    background:linear-gradient(#00654c,#009570);
+    /* height: 460px; */
+    /* 不要寫死高度，目的在於說日後裡面內容變多時，也可自適應延伸 */
+    padding-bottom: 20px;
+}
+.user_data{
+    padding: 0px 18px;
+}
+.contact h3{
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.contact .form{
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.contact .user_data textarea{
+    width: 600px;
+}
+.contact .info{
+    width: 600px;
+}
+
+.contact label{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+}
+.contact input{
+    width: 100%;
+    height: 33px;
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+
+.info-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact .btn{
+    width: 73px;
+    height: 34px;
+    background-color: #00cc99;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #69e2c4;
+}
+
+/* 表尾區域 */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    padding-bottom: 58px;
+}
+
+.footer ul{
+    font-size: 15px;
+}
+.footer li{
+    padding-bottom: 10px;
+}
+
+.footer span{
+    color: #e12d80;
+    padding-left: 3px;
+}
+
+
+
+
+
+
+
+
